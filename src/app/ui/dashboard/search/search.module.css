@@ -1,0 +1,21 @@
+.container {
+    width: max-content;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #000;
+    background-color: #2e374a;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+}
+
+.input:hover {
+    outline: none;
+}

@@ -1,0 +1,77 @@
+.container {
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+    /* padding: 20px; */
+}
+.info {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--bgSoft);
+    height: max-content;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.productname {
+    color: var(--textSoft);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.productImage {
+    position: absolute;
+    object-fit:cover;
+    border-radius: 3%;
+}
+
+.productImageWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1.25;
+}
+
+.form {
+    background-color: var(--bgSoft);
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+  
+.form input,
+.form textarea,
+.form select {
+    padding: 20px;
+    background-color: var(--bg);
+    color: var(--text);
+    border: 2px solid #2e374a;
+    /* margin-bottom: 30px; */
+}
+  
+.form input, .form select {
+    width: 100%;
+}
+  
+.form textarea{
+    width: 100%;
+}
+
+
+.form button{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: teal;
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
