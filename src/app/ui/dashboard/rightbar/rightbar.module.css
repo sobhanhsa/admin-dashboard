@@ -1,12 +1,12 @@
 .container {
-    position: fixed;
+  position: sticky;
 }
   
 .item {
     background: linear-gradient(to top, #182237, #253352);
     padding: 10px 12px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: relative;
 }
   

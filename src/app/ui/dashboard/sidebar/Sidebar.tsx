@@ -2,6 +2,9 @@ import { MdDashboard, MdSupervisedUserCircle, MdShoppingBag, MdAttachMoney, MdWo
 import styles from "./sidebar.module.css"
 import Image from "next/image";
 import MenuLink from "./menuLink/MenuLink";
+import { logOut } from "@/app/lib/actions/auth/actions";
+import { auth } from "@/app/auth";
+import { NextAuthResult, Session } from "next-auth";
 const menuItems = [
 {
     title: "Pages",
@@ -65,16 +68,20 @@ const menuItems = [
 },
 ];
 
-const Sidebar  = () => {
+const Sidebar  = async() => {
+    
+    const session : Session | null  = await auth();
+    console.log(session);
+    
     return (
         <div className={styles.container}>
             <div className={styles.user}>
-                <Image className={styles.userImage} src={"/noavatar.png"} 
+                <Image className={styles.userImage} src={(session?.user as any).img || "/noavatar.png"} 
                     alt="" height={50} width={50}
                 />
                 <div className={styles.userDetail}>
                     <span className={styles.username}>
-                        pille ss
+                        {(session?.user as any).username}
                     </span>
                     <span className={styles.userTitle}>
                         Administrator
@@ -100,10 +107,14 @@ const Sidebar  = () => {
                     </li>   
                 )}
             </ul>
-            <button className={styles.logout}>
-                <MdLogout/>
-                Logout
-            </button>
+            <form action={logOut}>
+                <button className={styles.logout}>
+                    <MdLogout/>
+                        
+                    Logout
+                        
+                </button>
+            </form>
         </div>
     )
 };

@@ -4,7 +4,7 @@ import styles from "../ui/dashboard/dashboard.module.css";
 import Rightbar from "../ui/dashboard/rightbar/Rightbar";
 import Transactions from "../ui/dashboard/transactions/Transactions";
 
-const DashBoadPage  = () => {
+const DashBoardPage  = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.main}>
@@ -23,4 +23,4 @@ const DashBoadPage  = () => {
     )
 };
 
-export default DashBoadPage;
+export default DashBoardPage;
