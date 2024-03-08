@@ -7,7 +7,6 @@ import styles from "./navbar.module.css"
 
 const Navbar  = () => {
 
-    
     const path = usePathname()
     
     return (

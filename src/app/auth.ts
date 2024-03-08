@@ -1,8 +1,8 @@
 import NextAuth, { NextAuthConfig, NextAuthResult, Session } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { authConfig } from "./authconfing";
-import { connectToDB } from "./lib/utils";
-import { UserModel, UserType } from "./lib/models";
+import { connectToDB } from "../utils/db/utils";
+import { UserModel, UserType } from "../utils/db/models";
 import * as bcrypt from "bcrypt";
 import {} from "../../node_modules/next-auth/lib";
 

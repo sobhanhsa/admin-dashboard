@@ -1,5 +1,5 @@
 import styles from "@/app/ui/login/loginPage.module.css";
-import { authenticate } from "../lib/actions/auth/actions";
+import { authenticate } from "../../utils/actions/auth/actions";
 import LoginForm from "./LoginForm/LoginForm";
 
 const LoginPage  = () => {

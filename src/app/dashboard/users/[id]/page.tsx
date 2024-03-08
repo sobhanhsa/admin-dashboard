@@ -1,6 +1,6 @@
-import { updateUser } from "@/app/lib/actions/user/actions";
-import { getUserById } from "@/app/lib/db/user/data";
-import { UserType } from "@/app/lib/models";
+import { updateUser } from "@/utils/actions/user/actions";
+import { getUserById } from "@/utils/db/user/data";
+import { UserType } from "@/utils/db/models";
 import styles from "@/app/ui/dashboard/users/single/userSinglePage.module.css";
 import Image from "next/image";
 

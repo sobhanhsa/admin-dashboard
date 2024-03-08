@@ -1,6 +1,6 @@
-import { deleteProduct } from "@/app/lib/actions/product/actions";
-import { createProd, getProducts } from "@/app/lib/db/product/data";
-import { ProductType } from "@/app/lib/models";
+import { deleteProduct } from "@/utils/actions/product/actions";
+import { createProd, getProducts } from "@/utils/db/product/data";
+import { ProductType } from "@/utils/db/models";
 import Pagination from "@/app/ui/dashboard/pagination/Pagination";
 import styles from "@/app/ui/dashboard/products/productsPage.module.css"
 import Search from "@/app/ui/dashboard/search/Search";

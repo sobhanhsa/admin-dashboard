@@ -2,7 +2,7 @@ import { MdDashboard, MdSupervisedUserCircle, MdShoppingBag, MdAttachMoney, MdWo
 import styles from "./sidebar.module.css"
 import Image from "next/image";
 import MenuLink from "./menuLink/MenuLink";
-import { logOut } from "@/app/lib/actions/auth/actions";
+import { logOut } from "@/utils/actions/auth/actions";
 import { auth } from "@/app/auth";
 import { NextAuthResult, Session } from "next-auth";
 const menuItems = [

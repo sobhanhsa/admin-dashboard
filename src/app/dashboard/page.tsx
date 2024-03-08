@@ -5,6 +5,7 @@ import Rightbar from "../ui/dashboard/rightbar/Rightbar";
 import Transactions from "../ui/dashboard/transactions/Transactions";
 
 const DashBoardPage  = () => {
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.main}>

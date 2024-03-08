@@ -1,5 +1,5 @@
-import { addProduct } from "@/app/lib/actions/product/actions";
-import { ProductType } from "@/app/lib/models";
+import { addProduct } from "@/utils/actions/product/actions";
+import { ProductType } from "@/utils/db/models";
 import styles from "@/app/ui/dashboard/products/add/addProductPage.module.css";
 
 const AddProductPage = () => {

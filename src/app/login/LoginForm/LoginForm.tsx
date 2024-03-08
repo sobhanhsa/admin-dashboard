@@ -1,6 +1,6 @@
 "use client"
 
-import { authenticate } from "@/app/lib/actions/auth/actions";
+import { authenticate } from "@/utils/actions/auth/actions";
 import styles from "./loginForm.module.css"
 import { useFormState } from "react-dom";
 

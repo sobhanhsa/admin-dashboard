@@ -1,6 +1,6 @@
-import { updateProduct } from "@/app/lib/actions/product/actions";
-import { getProductById } from "@/app/lib/db/product/data";
-import { ProductType } from "@/app/lib/models";
+import { updateProduct } from "@/utils/actions/product/actions";
+import { getProductById } from "@/utils/db/product/data";
+import { ProductType } from "@/utils/db/models";
 import styles from "@/app/ui/dashboard/products/single/productSinglePage.module.css";
 import Image from "next/image";
 

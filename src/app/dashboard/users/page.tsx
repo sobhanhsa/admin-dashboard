@@ -3,9 +3,9 @@ import Search from "../../ui/dashboard/search/Search";
 import Link from "next/link";
 import Image from "next/image";
 import Pagination from "@/app/ui/dashboard/pagination/Pagination";
-import { getUsers } from "@/app/lib/db/user/data";
-import { UserModel, UserType } from "@/app/lib/models";
-import { deleteUser } from "@/app/lib/actions/user/actions";
+import { getUsers } from "@/utils/db/user/data";
+import { UserModel, UserType } from "@/utils/db/models";
+import { deleteUser } from "@/utils/actions/user/actions";
 
 const  UserPage = async({searchParams}:{searchParams:{q?:string,page:string}}) => {
     

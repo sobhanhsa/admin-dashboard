@@ -2,8 +2,8 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { ProductModel } from "../../models";
-import { connectToDB } from "../../utils";
+import { ProductModel } from "../../db/models";
+import { connectToDB } from "../../db/utils";
 
 export const addProduct = async(formData:FormData) => {
     const { 

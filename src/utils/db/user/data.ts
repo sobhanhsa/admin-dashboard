@@ -1,5 +1,5 @@
-import { UserModel } from "../../models"
-import { connectToDB } from "../../utils";
+import { UserModel } from "../models"
+import { connectToDB } from "../utils";
 
 export const getUsers = async(q:string,p:number) => {
     connectToDB();

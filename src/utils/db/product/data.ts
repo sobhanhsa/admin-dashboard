@@ -1,5 +1,5 @@
-import { ProductModel } from "../../models"
-import { connectToDB } from "../../utils";
+import { ProductModel } from "../models"
+import { connectToDB } from "../utils";
 
 export const  createProd = async () => {
     connectToDB();

@@ -2,8 +2,8 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { UserModel } from "../../models";
-import { connectToDB } from "../../utils";
+import { UserModel } from "../../db/models";
+import { connectToDB } from "../../db/utils";
 import * as bcrypt from "bcrypt";
 
 export const addUser = async(formData:FormData) => {
